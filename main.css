@@ -1,0 +1,60 @@
+body{
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+.page-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 50px 0;
+}
+.enter-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.input-wrap input{
+    width: 250px;    
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    border: none;
+}
+
+.input-wrap input:first-child{
+    border-bottom: 1.5px solid #000;
+}
+.input-wrap input:last-child{
+    border-top: 1.5px solid #000;
+}
+.checkbox-wrap{
+    padding: 10px 0;
+}
+button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    transition: .5s;
+}
+button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+.info-wrap{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
