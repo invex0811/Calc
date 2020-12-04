@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- style -->
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h1 class="main-heading">Hours calculator</h1>
+<div id="pageWrap" class="page-wrap">
+		<div class="enter-wrap">
+			<div class="input-wrap">
+				<input type="number" placeholder="Time" id="inputTime" onchange="calc()"> 
+				<input type="number" placeholder="Rate" id="inputRate" onchange="calc()">
+			</div>
+			<div class="checkbox-wrap">
+				<label for="vacation" title="Отпуск 4%"><input type="checkbox" name="vacation" id="vacation"  checked onchange="calc()">Vacation</label>
+				<label for="tax" title="Налог +45"><input type="checkbox" name="tax" id="tax" checked onchange="calc()">Tax</label>
+			</div>
+			<button type="submit" onclick="calc()">Ok</button>
+		</div>
+		<div class="info-wrap" id="infoWrap">
+			<div id="totalTime"> <!-- You time --> </div> 
+			<div id="overTime"> <!-- Your overtime--> </div>
+			<div id="rate"> <!-- Your rate --> </div>
+			<div id="overRate"> <!-- Overrate --> </div>
+			<div id="money"> <!-- Your money --> </div>
+		</div>
+	
+</div>
+
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+	<script src="main.js"></script>
+</body>
+</html>
