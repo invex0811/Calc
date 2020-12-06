@@ -95,13 +95,11 @@ button:hover{
 }
 /* phone optimization */
 @media screen and (max-width: 800px) {
-    body *{
-        border: 1px solid red;
-    }
     .setting{  
         bottom: 0;
         right: 0;
         left: 0;
+        background-color: rgb(70, 70, 70) ;
     }
     
     
