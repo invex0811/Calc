@@ -71,20 +71,31 @@ function calc() {
 
 function clickOnSettingIcon() {
     let setting = document.getElementById('setting');
-    setting.classList.toggle('setting');
+    setting.classList.toggle('visible');
 }
+
+let background = document.getElementById('background');
+let color = document.getElementById('color');
+let fontSize = document.getElementById('fontSize');
 
 function themeChange() {
+ 
+    document.body.style.backgroundColor = background.value;
 
-    let background = document.getElementById('background').value;
-    document.body.style.backgroundColor = background;
-
-    let color = document.getElementById('color').value;
-    document.body.style.color = color;
-
-    let fontSize = document.getElementById('fontSize').value;
-    document.body.style.fontSize = fontSize + 'px';
+    document.body.style.color = color.value;
+    
+    document.body.style.fontSize = fontSize.value + 'px';
 }
 
+function reset() {
+    
+    document.body.style.backgroundColor = '';
+    document.body.style.color = '';
+    document.body.style.fontSize = '';
+
+    background.value = '';
+    color.value = '';
+    fontSize.value = '';
+}
 
 
