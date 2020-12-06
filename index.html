@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-
+	<!-- icon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- style -->
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="main.css">
@@ -30,6 +31,14 @@
 			<div id="money"> <!-- Your money --> </div>
 		</div>
 	
+</div>
+<div class="setting-wrap" ">
+	<i class="material-icons setting-icon" id="settingIcon" onclick="clickOnSettingIcon()" >settings</i>
+	<div class="setting" id="setting" >
+		<div class="background">Background:<input type="text" placeholder="Color" id="background" onchange="themeChange()"></div>
+		<div class="text-color">Text:<input type="text" placeholder="Color" id="color" onchange="themeChange()"></div>
+		<div class="font-size">Font:<input type="text" placeholder="Size" id="fontSize" onchange="themeChange()"></div>
+	</div>
 </div>
 
 

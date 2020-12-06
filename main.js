@@ -67,5 +67,24 @@ function calc() {
     document.querySelector("#money").innerHTML = 'Money: ' + totalMoney;
 }
 
+// setting theme
+
+function clickOnSettingIcon() {
+    let setting = document.getElementById('setting');
+    setting.classList.toggle('setting');
+}
+
+function themeChange() {
+
+    let background = document.getElementById('background').value;
+    document.body.style.backgroundColor = background;
+
+    let color = document.getElementById('color').value;
+    document.body.style.color = color;
+
+    let fontSize = document.getElementById('fontSize').value;
+    document.body.style.fontSize = fontSize + 'px';
+}
+
 
 
