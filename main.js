@@ -98,4 +98,12 @@ function reset() {
     fontSize.value = '';
 }
 
+function showleftBar() {
+    let leftBar = document.getElementById('leftBar');
+    let arrow = document.getElementById('arrow');
+
+    leftBar.classList.toggle('open-bar');
+    arrow.classList.toggle('arrow-style');
+}
+
 
