@@ -45,10 +45,12 @@
 			<div class="input-wrap">
 				<input type="number" placeholder="Time" id="inputTime" onchange="calc()"> 
 				<input type="number" placeholder="Rate" id="inputRate" onchange="calc()">
+				<input type="number" placeholder="Bonus" id="inputBonus" onchange="calc()">
 			</div>
 			<div class="checkbox-wrap">
 				<label for="vacation" title="Отпуск 4%"><input type="checkbox" name="vacation" id="vacation"  checked onchange="calc()">Vacation</label>
 				<label for="tax" title="Налог +45"><input type="checkbox" name="tax" id="tax" checked onchange="calc()">Tax</label>
+				<label for="bonus" title="Бонус"><input type="checkbox" name="bonus" id="bonus" onchange="calc()">Bonus</label>
 			</div>
 			<button type="submit" onclick="calc()">Ok</button>
 		</div>
@@ -57,7 +59,9 @@
 			<div id="overTime"> <!-- Your overtime--> </div>
 			<div id="rate"> <!-- Your rate --> </div>
 			<div id="overRate"> <!-- Overrate --> </div>
+			<div id="bonusLine"> <!-- Your bonus --> </div>
 			<div id="money"> <!-- Your money --> </div>
+			
 		</div>
 	
 </div>

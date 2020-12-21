@@ -73,7 +73,9 @@ body{
     color: #000;
     border: none;
 }
-
+#inputBonus{
+    display: none;
+}
 .input-wrap input:first-child{
     border-bottom: 1.5px solid #000;
 }

@@ -2,8 +2,10 @@
 function calc() {
     let time = document.getElementById('inputTime').value;
     let rate = document.getElementById('inputRate').value;
+    let inputBonus = document.getElementById('inputBonus');
     let vacationCheckbox = document.getElementById('vacation');
     let tax = document.getElementById('tax');
+    let checkBonus = document.getElementById('bonus');
     let totalMoney;
     let percentForVacation;
     let overTime;
@@ -33,7 +35,7 @@ function calc() {
 
             percentForVacation = totalMoney / 100 * 4 ;
             totalMoney += percentForVacation;
-
+            
             break;
     
         default:
@@ -52,6 +54,28 @@ function calc() {
         default:
             break;
     }
+    switch (checkBonus.checked) {
+        case true:
+            
+            inputBonus.style.display = 'block';
+
+            document.querySelector("#bonusLine").innerHTML = 'Bonus: ' + inputBonus.value;
+
+            inputBonus = +inputBonus.value;
+
+            totalMoney += inputBonus;
+
+            break;
+    
+        case false:
+
+            inputBonus.style.display = 'none';
+            
+            document.querySelector("#bonusLine").innerHTML = 'Bonus: 0'
+
+            break;
+    }
+    
 
     let infoWrap = document.getElementById('infoWrap');
     if (time == '') {
@@ -105,5 +129,3 @@ function showleftBar() {
     leftBar.classList.toggle('open-bar');
     arrow.classList.toggle('arrow-style');
 }
-
-
