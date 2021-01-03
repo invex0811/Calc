@@ -93,34 +93,34 @@ function calc() {
 
 // setting theme
 
-function clickOnSettingIcon() {
-    let setting = document.getElementById('setting');
-    setting.classList.toggle('visible');
-}
+// function clickOnSettingIcon() {
+//     let setting = document.getElementById('setting');
+//     setting.classList.toggle('visible');
+// }
 
-let background = document.getElementById('background');
-let color = document.getElementById('color');
-let fontSize = document.getElementById('fontSize');
+// let background = document.getElementById('background');
+// let color = document.getElementById('color');
+// let fontSize = document.getElementById('fontSize');
 
-function themeChange() {
+// function themeChange() {
  
-    document.body.style.backgroundColor = background.value;
+//     document.body.style.backgroundColor = background.value;
 
-    document.body.style.color = color.value;
+//     document.body.style.color = color.value;
     
-    document.body.style.fontSize = fontSize.value + 'px';
-}
+//     document.body.style.fontSize = fontSize.value + 'px';
+// }
 
-function reset() {
+// function reset() {
     
-    document.body.style.backgroundColor = '';
-    document.body.style.color = '';
-    document.body.style.fontSize = '';
+//     document.body.style.backgroundColor = '';
+//     document.body.style.color = '';
+//     document.body.style.fontSize = '';
 
-    background.value = '';
-    color.value = '';
-    fontSize.value = '';
-}
+//     background.value = '';
+//     color.value = '';
+//     fontSize.value = '';
+// }
 
 function showleftBar() {
     let leftBar = document.getElementById('leftBar');

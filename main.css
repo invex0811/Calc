@@ -40,14 +40,20 @@ body{
     background-color: #000;
     margin: 5px 0;
     padding: 25px 0;
-    transition: .5s;
     display: block
 }
 .toolWrapIcon:hover{
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
 }
-.money-page-wrap{
+.link-bar{
+    text-decoration: none;
+    color: #fff;
+}
+.link-bar:visited{
+    color: #fff;
+}
+.main__wrap{
     width: 100%;
 }
 .main-heading{
