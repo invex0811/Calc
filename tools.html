@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Tools</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- icon -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- style -->
 	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tools.css">
 	<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
 	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -34,7 +35,7 @@
 			</a>
 		</div>
 		<div class="toolWrapIcon" title="Tools">
-			<a class="link-bar" href="tools.html">
+			<a class="link-bar" href="">
 				<i class="material-icons" style="font-size: 50px;">assessment</i>
 			</a>
 		</div>
@@ -44,15 +45,26 @@
 			</a>
 		</div>
 	</div>
-	<div class="finance-expense__wrap main__wrap">
-		<h1 class="main-heading">Finance Expense</h1>
-		<div class="finance-culc__wrap">
-				
+	<div class="tools-page__wrap main__wrap">
+		<h1 class="main-heading">Tools</h1>
+		<div class="tools__wrap">
+            <div class="calc-wrap">
+                <h2>Time</h2>
+                <label for="fraction"><input type="number" id="fraction" placeholder="Введите дробь"></label>
+                <p id="answer"> </p>
+                <button onclick="timeCalc()">Ok</button>
+            </div>
+            <div class="calc-wrap">
+                <h2></h2>
+            </div>
+            <div class="calc-wrap">
+                <h2></h2>
+            </div>
 		</div>
 	</div>
 
 	
 	<script src="main.js"></script>
-	<script src="expense.js"></script>
+	<script src="tools.js"></script>
 </body>
 </html>

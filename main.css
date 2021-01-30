@@ -53,6 +53,9 @@ body{
 .link-bar:visited{
     color: #fff;
 }
+.link-bar:active{
+    color: blueviolet;
+}
 .main__wrap{
     width: 100%;
 }
@@ -81,7 +84,18 @@ body{
 }
 #inputBonus{
     display: none;
+    margin-top: 1px;
 }
+#dollarRate{
+    display: none;
+}
+.icon-info{
+    position: relative;
+    left: -40px;
+    top: 5px;
+    cursor: pointer;
+}
+
 .input-wrap input:first-child{
     border-bottom: 1.5px solid #000;
 }

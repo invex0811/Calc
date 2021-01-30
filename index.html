@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Hours calculator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- icon -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +26,7 @@
  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-<div class="left-bar" id="leftBar">
+<!-- <div class="left-bar" id="leftBar">
 	<i class="material-icons arrow-open" id="arrow" style="font-size: 40px; cursor: pointer;" onclick="showleftBar()" >keyboard_arrow_right</i>
 	<div class="toolWrapIcon" title="Hours calculator">
 		<a class="link-bar" href="index.html">
@@ -34,7 +34,7 @@
 		</a>
 	</div>
 	<div class="toolWrapIcon" title="Tools">
-		<a class="link-bar" href="">
+		<a class="link-bar" href="tools.html">
 			<i class="material-icons" style="font-size: 50px;">assessment</i>
 		</a>
 	</div>
@@ -43,7 +43,7 @@
 			<i class="material-icons" style="font-size: 50px;">money_off</i>
 		</a>
 	</div>
-</div>
+</div> -->
 
 <div id="moneyPageWrap" class="money-page-wrap main__wrap">
 	<!-- <i class="material-icons setting-icon" id="settingIcon" onclick="clickOnSettingIcon()" >settings</i>
@@ -59,11 +59,26 @@
 				<input type="number" placeholder="Time" id="inputTime" onchange="calc()"> 
 				<input type="number" placeholder="Rate" id="inputRate" onchange="calc()">
 				<input type="number" placeholder="Bonus" id="inputBonus" onchange="calc()">
+				<input type="number" placeholder="Dollar rate" id="dollarRate" onchange="calc()">
+				
+				                       
 			</div>
 			<div class="checkbox-wrap">
-				<label for="vacation" title="Отпуск 4%"><input type="checkbox" name="vacation" id="vacation"  checked onchange="calc()">Vacation</label>
-				<label for="tax" title="Налог +45"><input type="checkbox" name="tax" id="tax" checked onchange="calc()">Tax</label>
-				<label for="bonus" title="Бонус"><input type="checkbox" name="bonus" id="bonus" onchange="calc()">Bonus</label>
+				<label for="vacation" title="Отпуск 4%">
+					<input type="checkbox" name="vacation" id="vacation"  checked onchange="calc()">Vacation
+				</label>
+				<label for="tax" title="Налог +45">
+					<input type="checkbox" name="tax" id="tax" checked onchange="calc()">
+					Tax
+				</label>
+				<label for="bonus" title="Бонус">
+					<input type="checkbox" name="bonus" id="bonus" onchange="calc()">
+					Bonus
+				</label>
+				<label for="fivepercenttax" title="5% Налог(Автоподсчет)">
+					<input type="checkbox" name="fivepercenttax" id="fivePercentTax" onchange="calc()">
+					5%Tax
+				</label>
 			</div>
 			<button type="submit" onclick="calc()">Ok</button>
 		</div>
@@ -74,9 +89,9 @@
 			<div id="overRate"> <!-- Overrate --> </div>
 			<div id="bonusLine"> <!-- Your bonus --> </div>
 			<div id="money"> <!-- Your money --> </div>
-			
+			<div id="taxFiveLine"> <!-- Yor 5% tax --> </div>
 		</div>
-	
+		
 </div>
 	
 
