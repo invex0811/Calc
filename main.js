@@ -113,7 +113,7 @@ function calc() {
     }
 
     let fivePercent = (totalMoney * dollarRate.value) / 100 * 5;
-    document.querySelector('#taxFiveLine').innerHTML = '5% Tax:' + fivePercent;
+    document.querySelector('#taxFiveLine').innerHTML = '5% Tax:' + fivePercent.toFixed(2);
 
 }
 
